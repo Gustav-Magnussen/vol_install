@@ -40,10 +40,10 @@ $ chmod +x volatility/vol.py
 ```
 
 If you want to move install to /opt and make it globally executable:
-'''
+```
 $ sudo mv volatility /opt
 $ sudo ln -s /opt/volatility/vol.py /usr/bin/vol.py
-'''
+```
 
 Run in order to test volatility.
 ```
