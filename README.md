@@ -1,7 +1,7 @@
 # Volatility Install
 Install guide for Volatility 2.6.1 on Linux.
 ## Install script
-In order to install using the install script download and execute the vol_install as sudo:
+In order to install using the install script download and execute the [vol_install](https://raw.githubusercontent.com/Gustav-Magnussen/vol_install/main/vol_install?token=AOH75QDBYVDSCMENKFBRZADBN7PYQ) as sudo:
 ```
 sudo ./vol_install
 ```
