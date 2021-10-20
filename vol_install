@@ -14,7 +14,7 @@ echo "Pip2 installed"
 
 #Distorm3
 sudo apt install 
-sudo apt install python-setuptools build-essential python2-dev
+sudo apt install python-setuptools build-essential python2-dev -y
 sudo pip2 install distorm3==3.3.4
 sudo apt-get install yara -y
 echo "Distorm3 installed"
@@ -30,7 +30,7 @@ rm pycrypto.2.6.1.tar.gz
 echo "Pycrypto installed"
 
 #Volatility
-sudo apt install git
+sudo apt install git -y
 git clone https://github.com/volatilityfoundation/volatility.git
 chmod +x volatility/vol.py
 
