@@ -1,5 +1,11 @@
 # Volatility Install
 
+## Install script
+In order to install using the install script download and execute the vol_install as sudo:
+```
+sudo ./vol_install
+```
+
 ## Manual Install
 Manual install guide for Volatility 2.6.1 on Linux.
 
@@ -50,9 +56,6 @@ Run in order to test volatility.
 $ vol.py -h
 ```
 If this command returns the help page of volatility and volatility plugins you are ready to analyse volatile memory.
-
-## Install script
-
 
 ## Import errors
 If you get an import problem with distorm3 like:
