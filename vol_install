@@ -1,0 +1,42 @@
+#!/bin/bash
+
+pyv="$(python -V 2>&1)"
+if [[ "$pyv" =~ "Python 2" ]]; then
+	echo "Python 2 is installed"
+else
+	sudo apt install python2
+fi
+
+#Pip2
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
+echo "Pip2 installed"
+
+#Distorm3
+sudo apt install 
+sudo apt install python-setuptools build-essential python2-dev
+sudo pip2 install distorm3==3.3.4
+sudo apt-get install yara -y
+echo "Distorm3 installed"
+
+#Pycrypto
+wget https://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.6.1.tar.gz
+tar -xvzf pycrypto-2.6.1.tar.gz
+cd pycrypto-2.6.1
+python2 setup.py build
+sudo python2 setup.py build install
+sudo rm pycrypto-2.6.1
+rm pycrypto.2.6.1.tar.gz
+echo "Pycrypto installed"
+
+#Volatility
+sudo apt install git
+git clone https://github.com/volatilityfoundation/volatility.git
+chmod +x volatility/vol.py
+
+sudo mv volatility /opt
+sudo ln -s /opt/volatility/vol.py /usr/bin/vol.py
+
+echo "Volatility installed"
+echo "-------------------"
+echo "Volatility can now be texted using the command: vol.py -h"
