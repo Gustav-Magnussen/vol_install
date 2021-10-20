@@ -1,7 +1,9 @@
-# vol_install
-Install guide for Volatility 2.6.1 on Linux.
+# Volatility Install
 
-## Python
+## Manual Install
+Manual install guide for Volatility 2.6.1 on Linux.
+
+### Python
 Ensure that your system has python 2 installed:
 ```
 $ python --version
@@ -15,8 +17,8 @@ $ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 $ sudo python2 get-pip.py
 ```
 
-## Dependencies for Volatility 
-### Distorm3 and Pycrypto
+### Dependencies for Volatility 
+#### Distorm3 and Pycrypto
 Install dependencies:
 ```
 $ sudo apt install python-setuptools build-essential python2-dev
@@ -29,7 +31,7 @@ $ python2 setup.py build
 $ sudo python2 setup.py build install
 ```
 
-## Volatility
+### Volatility
 Install volatility:
 ```
 $ sudo apt install git
@@ -48,6 +50,9 @@ Run in order to test volatility.
 $ vol.py -h
 ```
 If this command returns the help page of volatility and volatility plugins you are ready to analyse volatile memory.
+
+## Install script
+
 
 ## Import errors
 If you get an import problem with distorm3 like:
